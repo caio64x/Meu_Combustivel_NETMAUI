@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppMeuCombustivel.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a submarine number ten" />
+
+            <Label Text="preço do Etanol" />
+            <Entry
+                x:Name="txt_etanol"
+                Placeholder="R$"
+                Keyboard="Numeric"
+                TextChanged="NumericEntry_TextChanged" />
+
+            <Label Text="Preço da Gasolina" />
+            <Entry
+                x:Name="txt_gasolina"
+                Placeholder="R$"
+                Keyboard="Numeric"
+                TextChanged="NumericEntry_TextChanged" />
+
+            <Button Text="Qual compensa mais?" Clicked="Button_Clicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
